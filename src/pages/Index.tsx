@@ -40,6 +40,33 @@ const Index = () => {
       size: "Pequeno",
       description: "Gatinha tímida mas carinhosa",
       image: "https://images.unsplash.com/photo-1493962853295-0fd70327578a?w=400&h=300&fit=crop"
+    },
+    {
+      id: 4,
+      name: "Felix",
+      type: "Gato",
+      age: "3 anos",
+      size: "Médio",
+      description: "Gato independente e elegante",
+      image: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop"
+    },
+    {
+      id: 5,
+      name: "Princesa",
+      type: "Gato",
+      age: "4 anos",
+      size: "Pequeno",
+      description: "Gata muito dócil e companheira",
+      image: "https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=400&h=300&fit=crop"
+    },
+    {
+      id: 6,
+      name: "Simba",
+      type: "Gato",
+      age: "6 meses",
+      size: "Pequeno",
+      description: "Gatinho brincalhão e cheio de energia",
+      image: "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&h=300&fit=crop"
     }
   ];
 
@@ -145,7 +172,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {featuredAnimals.map((animal) => (
               <Card key={animal.id} className="card-hover cursor-pointer">
                 <div className="relative">
